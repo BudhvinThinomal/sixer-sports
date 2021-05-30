@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/*.CSS file for main_page.html*/
+
+.text {
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	padding: 10px;
+	color: #fff;
+	font-weight: bolder;
+}
+.table_text {
+	font-size: 20px;
+	color: #fff;
+}
+p {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	color: #fff;
+}
+.loader {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1E0046;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader > img {
+	width: 100px;
+}
+.loader.hidden {
+	animation: fadeOut 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+body, html {
+	width: 100%;
+	margin: 0;
+	background-image: url("product.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+h1 {
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	top: 20%;
+	left: 34%;
+	color: #1E0046;
+}
+.btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: transparent;
+	color: #1E0046;
+	font-size: 20px;
+	font-family: berlin Sans; 
+	font-weight: bolder;
+	padding: 12px 24px;
+	border: 1px solid #1E0046;
+	cursor: pointer;
+	transition: all 0.5s;
+	text-align: center;
+	width: 20%;
+	height: 10%;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb'; /*RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK*/
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+

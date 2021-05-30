@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container1 .button_up {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #290f4b;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+
+}
+.container1 .shop_now {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #290f4b;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.shop_now a {
+    text-decoration: none;
+    color: white;
+}

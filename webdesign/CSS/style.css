@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+html{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin: 120px 0 0px 0;
+    text-align: center;
+    color: #1E0046;
+}
+
+hr{
+    width: 25%;
+    margin-left: 37%;
+    height: 5px;
+    background-color: #1E0046;
+    margin-bottom: 20px;
+}
+
+h3,u{
+    font-family: 'Oswald', sans-serif;
+    color: #1E0046;
+    font-size: 20px;
+}
+
+/*Display body of content*/
+.main-container{
+    margin-top: 20px;
+    display: grid;
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-gap:20px;
+}
+
+
+#sub-topic{
+    background-color: #1E0046;
+    color:#ffffff;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+#list1{
+    margin-left: 10px;
+}
+/*container of image*/
+.showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    min-width: 830px;
+    background: url('images/Cricket Player.jpg');
+    background-size: cover;
+    background-position: center;                
+    box-shadow: #666666;
+}
+/*container of image and listed benifits*/
+.top-container{
+    display: grid;
+    grid-gap:20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+/*container of top-box-a and b*/
+.top-box{
+    background-color: #b3b3b3;
+    display: grid;
+}
+/*display health benifit*/
+.top-box-a{
+    grid-area: top-box-a;
+}
+/*displat other benifits*/
+.top-box-b{
+    grid-area: top-box-b;
+}
+
+/*information area*/
+.box1{
+    background-color: #b3b3b3;
+    text-align:left;
+    padding: 1.5rem 2rem;
+    box-shadow: #666666;
+}
+/*celebratig victory image*/
+#img{width:350px;
+    height:250px;
+    float:right;
+    margin:30px 30px 30px 30px;
+}
+

@@ -1,0 +1,70 @@
+/*Footer Styling*/
+footer {
+    position: relative;
+    margin-top: 100px;
+    background-color: #290f4b;
+    width: 100%;
+    height: 210px;
+}
+footer .logo_for_footer {
+    float: left;
+    width: 170px;
+    height: 90px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+footer .link_set {
+    float: left;
+    margin-left: 24%;
+    width: 170px;
+    height: 200px;
+}
+.link_set a {
+    color: #fff;
+    text-decoration: none;
+}
+.link_set li {
+    margin-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.4s;
+}
+.link_set li:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+/*bat svg*/
+.icon-wrapper {
+    margin-right: 10%;
+    width: 190px;
+    height: 200px;
+    overflow: hidden;
+    float: right;
+}
+.cls-1 {
+    fill: #fff;
+}
+.cls-2,
+.cls-3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 22.93;
+}
+
+.cls-2 {
+  stroke-width: 2px;
+}
+.icon-wrapper #bat {
+    transform-origin: bottom left;
+    transform: rotate(0) translate3d(0,0,0) scale(.9) rotateX(0deg);
+    transition: all .5s cubic-bezier(0.56, -1, 0.55, 1.5);
+}
+.icon-wrapper:hover #bat {
+    transform: rotate(30deg) scale(.75) rotateX(-10deg);
+}
+.icon-wrapper #ball {
+    transform: translate(0px, 0px);
+    transition: 500ms all ease-out .35s;
+}
+.icon-wrapper:hover #ball {
+    transform: translate(33px,50px);
+}

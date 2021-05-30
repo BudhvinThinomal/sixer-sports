@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">    
+        <link rel="stylesheet" type="text/css" href="CSS/navigation_bar.css">       <!--link to stylesheet-->
+        <link rel="stylesheet" type="text/css" href="CSS/quizPart1.css">             <!--link to stylesheet-->
+        <script src="navigation_bar.js"></script>
+        <title>Quiz Time !!</title>
+    </head>
+    <body>
+        <header class="nav_header">
+            <div>
+                <div class="header_right">
+                    <a href="thinomalPageEditor.html">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="header_logowrap">
+                    <a href="homePage.html" class="header_logo"></a>
+                </div>
+                <div class="header_left" id="mySidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="homePage.html">Home</a>
+                    <a href="product.html">Store</a>
+                    <a href="quizPart01.html">Quiz</a>
+                    <a href="image_viewer.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="sitemap.html">Site Map</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">☰ </button>
+            </div>
+        </header>
+        <div id="quizContainer">      <!--create main div-->          
+            <div id="start">
+                <h1>How Much Do You Know About Cricket??</h1>
+                <a class="start_quiz" href="quizPart02.html">Start The Quiz</a>            <!--create anchor tag-->
+            </div>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

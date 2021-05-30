@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title h2{
+    padding-top: 120px;
+    text-align: center;
+    color: #290f4b;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+.title hr {
+    width: 25%;
+    height: 5px;
+    background-color: #290f4b;
+}
+
+/*Product stylig starts here*/
+
+.container,
+.products-container   {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.image {
+    margin-right: 20px;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+}
+.image a{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #1E0046;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #fff;
+}
+.image a:hover {
+    color: #1E0046;
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #fff;
+    border: 3px solid#1E0046;
+}
+.image img{
+    margin-left: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 20px;
+}
+.btn a {
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #290f4b;
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;    
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: #fff;
+    border: 1px solid #290f4b;
+    color: #290f4b;
+}
+
+/*Product order*/
+form {
+    padding-top: 30px;
+    background-color: #9a9a9a85;
+    width: 70%;
+    margin-left: 15%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px; 
+    padding-bottom: 30px;  
+}
+.product_line {
+	padding: 4px;
+}
+.hover_01 {
+	margin-left: 25%;
+	padding: 10px;
+    max-width: 650px;
+    width: 100%; 
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.sub_lable_01 {
+    margin-left: 30px;
+	color: #1E0046;
+	font-size: 0.786em;
+    margin-top: 4px;
+    display: inline-block;
+}
+.dropdown {
+	color: #1E0046;
+	height: 30px;
+	padding: 4px;
+	box-shadow: 0 1px 2px #eee inset;
+	border-color: #cccccc;
+	font-size: 0.857em;
+}
+.check {
+	cursor: pointer;
+}
+.set_heading {
+	color: #1E0046;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+.space {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+/*Customer order details styling*/
+.title_customerdetails {
+    border: 2px solid #1E0046;
+}
+.title_customerdetails h2{
+    padding-top: 10px;
+    text-align: center;
+    color: #290f4b;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+.title_customerdetails hr {
+    width: 25%;
+    height: 5px;
+    background-color: #290f4b;
+}
+.customer_order_details {
+    background-color: #b49ecf;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1E0046;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}   
+
+.form_textbox {
+    width: 76%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.customer_order_details #ac {
+    width: 10%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.customer_order_details #pn {
+    width: 40%;
+    margin-left: 2%;
+}
+
+.billingAddress {
+    background-color: #b49ecf;
+    padding-top: 20px;
+    border-bottom: 2px solid #1E0046;
+}
+.name_details {
+    margin-bottom: 20px;
+}
+
+.form_dropdown {
+    width: 40%;
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 5px;
+    color: #a2a0a5;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.space_before_btn {
+    background-color: #fff;
+    height: 30px;
+
+}
+.proceed_button {
+    padding: 20px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 3%;
+    height: 60px;
+    background-color: rgb(167, 187, 187);
+    border-radius: 10px;
+}
+.proceed_button button {
+    margin-left: 40%;
+    width: 160px;
+    height: 50px;
+    background-color: #fff;
+    color: #1E0046;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: none;
+    border: none;
+    padding: 2px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.proceed_button button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: #1E0046;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+  

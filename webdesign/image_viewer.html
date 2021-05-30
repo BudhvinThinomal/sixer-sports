@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Galary</title>
+        <link rel="stylesheet" href="CSS/image_viewer.css">
+        <link rel="stylesheet" href="CSS/navigation_bar.css">
+        <script src="navigation_bar.js"></script>
+        <script src="java_script/image_viewer.js"></script>
+        <script src="java_script/font_resize.js"></script>
+    </head>
+    <body>
+        <header class="nav_header">
+            <div>
+                <div class="header_right">
+                    <a href="madushani Page editor.html">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="header_logowrap">
+                    <a href="homePage.html" class="header_logo"></a>
+                </div>
+                <div class="header_left" id="mySidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="homePage.html">Home</a>
+                    <a href="product.html">Store</a>
+                    <a href="quizPart01.html">Quiz</a>
+                    <a href="image_viewer.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="sitemap.html">Site Map</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">☰ </button>
+            </div>
+        </header>
+        <section class="sec01">
+            <div class="product_body">
+                <div class="option_menue">
+                    <form style="display: flex;">
+                        <label class="text">Change page Colour :</label> &nbsp
+                        <div class="select">
+                            <select id="pagecolor_change" onchange="checkOptions()">
+                                <option value="1">Please select background color</option>
+                                <option value="2">Pink</option>
+                                <option value="3">Yellow</option>
+                                <option value="4">Blue</option>
+                                <option value="5">Purple</option> 
+                                <option value="6">Green</option> 
+                            </select>
+                        </div>
+                        <label class="text">Change text Color :</label>	&nbsp
+                        <div class="select" onchange="checkTextColor()">
+                            <select id="textcolor_change" >
+                                <option value="1">Please Select text color</option>
+                                <option value="2">Pink</option>
+                                <option value="3">Yellow</option>
+                                <option value="4">Blue</option>
+                                <option value="5">Purple</option> 
+                                <option value="6">Green</option> 
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="heading">
+            <h2>Gallery</h2>
+            <hr>
+        </section> 
+        <section class="thabnail_container" onclick="changeImage(event)">
+            <img src="images/181.png" id="image01">
+            <img src="images/191.png" id="image02">
+            <img src="images/201.png" id="image03">
+            <img src="images/211.png" id="image04">
+            <img src="images/221.png" id="image05">
+        </section>
+        <section class="showinwide" id="view_image">
+            <img src="" id="mainView">
+
+            <div id="description" class="description">
+                <p id="imageDescription" class="imageDescription"></p>
+            </div> 
+        </section>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

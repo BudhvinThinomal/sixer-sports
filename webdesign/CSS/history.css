@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/*css for page history of cricket*/
+body {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin-top: 120px;
+}
+.coloumn1{
+    float: left;
+    width:75%;
+}
+
+.coloumn2{
+    float: right;
+    width: 25%;
+    background-color:#ae9bc7 ;
+    padding: 0px 0px 75px;   
+}
+#mainheading {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+.row::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+/*css for image divs*/
+#early{
+  margin:5px ;
+  padding:5px ;
+  border: 4px;
+  float:right;
+ 
+
+}
+#rapid{
+    margin: 5px;
+    padding:5px ;
+    border:5px;
+    float:right;
+   
+
+
+}
+#pre{
+ margin:5px ;
+ padding: 5px ;
+ border:5px;
+ float: right;
+}
+#modern{
+  margin: 5px ;
+  padding:5px;
+  border:5px;
+  float:right;
+}
+/*css for text divs */
+
+#Origins{
+margin: 5px;
+padding:5px;
+border:5px;
+float: left;
+border-radius:15px ;
+background-color:#ccccb3 ;
+}
+#ninetineth{
+margin:20px 5px 5px;
+padding:5px;
+border:5px;
+float:left;
+border-radius: 15px;
+background-color: #ccccb3;
+
+}
+
+#premodern{
+      margin:35px 5px 5px;
+      padding: 5px;
+      border:5px;
+      float:left;
+      border-radius: 15px;
+      background-color: #ccccb3;
+
+}
+#moderntxt{
+   margin:35px 5px 5px ;
+   padding:5px;
+   border:5px;
+   float:left;
+   border-radius: 15px;
+   background-color: #ccccb3;
+}
+#h1{
+color:blue ;
+}
+.header{
+    background-color:#290f4b;
+    padding: 20px;
+    text-align: center;
+}
+#Cricketevo{
+margin: 10px 5px 5px;
+padding:15px 15px 15px 5px;
+border:5px;
+float: left;
+background-color:#ccccb3;
+border-radius: 15px;
+
+}
+
+
+    

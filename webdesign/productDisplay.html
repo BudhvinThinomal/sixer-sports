@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Store</title>
+        <link rel="stylesheet" href="CSS/backToTop.css">
+        <link rel="stylesheet" href="CSS/navigation_bar.css">
+        <link rel="stylesheet" href="CSS/productDisplay.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="navigation_bar.js"></script>
+    </head>
+    <body>
+        <a id="button"></a>
+        <div>
+            <header class="nav_header">
+                <div>
+                    <div class="header_right">
+                        <a href="shanukaPageEditor.html">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="header_logowrap">
+                        <a href="homePage.html" class="header_logo"></a>
+                    </div>
+                    <div class="header_left" id="mySidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="homePage.html">Home</a>
+                        <a href="product.html">Store</a>
+                        <a href="quizPart01.html">Quiz</a>
+                        <a href="image_viewer.html">Gallery</a>
+                        <a href="about.html">About</a>
+                        <a href="sitemap.html">Site Map</a>
+                    </div>
+                    <button class="openbtn" onclick="openNav()">☰ </button>
+                </div>
+            </header>
+            <!--Navigation bar ends here-->
+            <br>
+            <br>
+            <br>
+            
+            <div class="title">
+                <h2>Top Selling</h2>
+                <hr>
+            </div>
+
+            <div class="container">
+                <!--Product 01-->
+                <div class="image">
+                    <img src="images/tshirt03.png" alt="tshirt01" width="200px" height="275px">
+                    <a href="#sec2" style="text-decoration: none;">Go to order</a>
+                    <h3>Sixer Sports cricket T</h3>
+                    <h3>$15.00</h3>
+                    <h3>Item No: 01</h3>
+                </div>
+
+                <!--Product 02-->
+                <div class="image">
+                    <img src="images/hoodie03.png" alt="tshirt01" width="200px" height="275px">
+                    <a href="#sec2" style="text-decoration: none;">Go to order</a>
+                    <h3>Sixer Sports hoodie with number 6</h3>
+                    <h3>$22.00</h3> 
+                    <h3>Item No: 02</h3>
+                    
+                </div>
+
+                <!--Product 03-->
+                <div class="image">
+                    <img src="images/hoodie02.png" alt="tshirt01" width="200px" height="275px">
+                    <a href="#sec2" style="text-decoration: none;">Go to order</a>
+                    <h3>Sixer Sports name printed Hoodie</h3>
+                    <h3>$18.00</h3>
+                    <h3>Item No: 03</h3>
+                </div>
+
+                <!--Product 04-->
+                <div class="image">
+                    <img src="images/puma.png" alt="tshirt01" width="200px" height="275px">
+                    <a href="#sec2" style="text-decoration: none;">Go to order</a>
+                    <h3>PUMA T-shirt</h3>
+                    <h3>$20.00</h3>
+                    <h3>Item No: 04</h3>
+                </div>
+
+                <!--Product 05-->
+                <div class="image">
+                    <img src="images/hoodie01.png" alt="tshirt01" width="200px" height="275px">
+                    <a href="#sec2" style="text-decoration: none;">Go to order</a>
+                    <h3>Sixer Sports Hoodie</h3>
+                    <h3>$10.00</h3>
+                    <h3>Item No: 05</h3>
+                </div>
+
+                <!--Product 06-->
+                <div class="image">
+                    <img src="images/tshirt04.png" alt="tshirt01" width="200px" height="260px">
+                    <a href="#sec2" style="text-decoration: none; ">Go to order</a>
+                    <h3>DC printed Sixer Sports T-shirt</h3>
+                    <h3>$25.00</h3>
+                    <h3>Item No: 06</h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="title" id="sec2">
+            <h2>Product Order</h2>
+            <hr>
+        </div>
+        <div class="Customer_details">
+            <form>
+                <span class="product_set">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox01" type="checkbox" name="cb01" value="Sixer Sports cricket T">
+                        <label class="set_heading">
+                            <span>
+                                <span style="font-weight: bold; margin-left: 2px;">
+                                    Item number 01
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="wt_price">15</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="Wt_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="Wt_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <span class="product_line">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox02" type="checkbox" name="cb01" value="Sixer Sports hoodie with number 6">
+                        <label class="set_heading">
+                            <span>
+                                <span>
+                                    Item number 02
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="bh_price">22</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="bh_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="bh_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <span class="product_line">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox03" type="checkbox" name="cb01" value="Sixer Sports name printed Hoodie">
+                        <label class="set_heading">
+                            <span>
+                                <span>
+                                    Item number 03
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="wh_price">18</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="wh_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="wh_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <span class="product_line">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox04" type="checkbox" name="cb01" value="PUMA T-shirt">
+                        <label class="set_heading">
+                            <span>
+                                <span>
+                                    Item number 04
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="pt_price">20</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="pt_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="pt_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <span class="product_line">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox05" type="checkbox" name="cb01" value="Sixer Sports Hoodie">
+                        <label class="set_heading">
+                            <span>
+                                <span>
+                                    Item number 05
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="bh2_price">10</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="bh2_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="bh2_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <span class="product_line">
+                    <div class="hover_01">
+                        <input class="check" id="checkbox06" type="checkbox" name="cb01" value="DC printed Sixer Sports T-shirt">
+                        <label class="set_heading">
+                            <span>
+                                <span>
+                                    Item number 06
+                                </span>
+                                <span>
+                                    <b>
+                                        <span>
+                                            $
+                                            <span id="DC_price">25</span>
+                                        </span>
+                                    </b>
+                                </span>
+                            </span>
+                        </label>
+                        <br>
+                        <br>
+                        <span>
+                            <label class="sub_lable_01">Quantty</label>
+                            <select id="DC_quantity" class="dropdown">
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="3"> 3 </option>
+                                <option value="4"> 4 </option>
+                                <option value="5"> 5 </option>
+                                <option value="6"> 6 </option>
+                                <option value="7"> 7 </option>
+                                <option value="8"> 8 </option>
+                                <option value="9"> 9 </option>
+                                <option value="10"> 10 </option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label class="sub_lable_01">T-Shirt Size</label>
+                            <select id="DC_size" class="dropdown">
+                                <option value="XS"> XS </option>
+                                <option value="S"> S </option>
+                                <option value="M"> M </option>
+                                <option value="L"> L </option>
+                                <option value="XL"> XL </option>
+                                <option value="XXL"> XXL </option>
+                                <option value="XXXL"> XXXL </option>
+                            </select>
+                        </span>
+                    </div>
+                </span>
+                <div class="btn">
+                    <a href="#order_details">Click to continue</a>
+                </div>
+                <div class="space" id="order_details"></div>
+                
+                <div class="title_customerdetails" >
+                    <h2>Customer details</h2>
+                    <hr>
+                </div>
+                
+                <div class="customer_order_details">
+                    <div class="name_details">
+                        <span style=" display: flex; ">
+                            <input class="form_textbox"  placeholder="first name" id="f_name" type="text" name="fName"> 
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star01">*</p>
+                        </span>
+                        <span style=" display: flex;">
+                            <input class="form_textbox"  placeholder="last name" id="l_name" type="text" name="lName" >
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star02">*</p>
+                        </span>
+                        <span style=" display: flex;">
+                            <input class="form_textbox"  type="email" name="eMail" id="email" placeholder="ex: myname@example.com">
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star03">*</p>
+                        </span>
+                        <span class="sub_lable_container" style="vertical-align: top;">
+							<input class="form_textbox" type="tel" name="areaCode" id="ac" size="6" >
+							<span class="phone-seperater">
+								&nbsp;-
+							</span>
+							<label class="sub_lable">Area Code</label>
+						</span>
+						<span class="sub_lable_container" style="vertical-align: top;">
+							<input class="form_textbox" type="tel" name="phoneNumber" id="pn" size="12">
+							<label class="sub_lable" id="pn_l"> - Phone Number</label>
+						</span>
+                    </div>
+                </div>
+                <div class="space"></div>
+                <div class="title_customerdetails">
+                    <h2>Billing Address</h2>
+                    <hr>
+                </div>
+                <div class="billingAddress" >
+                    <div class="billingDetails">
+                        <span style=" display: flex;">
+                            <input class="form_textbox" size="50" type="text" id="st01" placeholder="street address" name="add_line1">
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star04">*</p>
+                        </span>
+                        <span style=" display: flex;">
+                            <input size="50" class="form_textbox" type="text" id="st02" placeholder="Street Address Line 2" name="add_line2">
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star05">*</p>
+                        </span>
+                        <span style="display: flex;">
+                            <input class="form_textbox" size="21" type="text" id="city" name="city" placeholder="City">
+                            <p style="margin: 0; padding: 0; color: red; font-size: 30px; visibility: hidden;" id="star06">*</p>
+                        </span>
+                        <input class="form_textbox" size="22" type="text" name="state" placeholder="state">
+                        <input size="21" class="form_textbox" type="text" name="postal" placeholder="Postal/Zip Code">
+
+                        <span id="spni" style="vertical-align: top;">
+                            <select id="country_select" class="form_dropdown" width="22">
+                                <option value=""> Please Select </option>
+                                <option value="United States"> United States </option>
+                                <option value="Afghanistan"> Afghanistan </option>
+                                <option value="Australia"> Australia </option>
+                                <option value="Bangladesh"> Bangladesh </option>
+                                <option value="Brazil"> Brazil </option>
+                                <option value="Canada"> Canada </option>
+                                <option value="China"> China </option>
+                                <option value="Egypt"> Egypt </option>
+                                <option value="France"> France </option>
+                                <option value="Germany"> Germany </option>
+                                <option value="Hong Kong"> Hong Kong </option>
+                                <option value="India"> India </option>
+                                <option value="Italy"> Italy </option>
+                                <option value="Japan"> Japan </option>
+                                <option value="Jersey"> Jersey </option>
+                                <option value="Malaysia"> Malaysia </option>
+                                <option value="Maldives"> Maldives </option>
+                                <option value="Mali"> Mali </option>
+                                <option value="Malta"> Malta </option>
+                                <option value="Myanmar"> Myanmar </option>
+                                <option value="Nepal"> Nepal </option>
+                                <option value="Netherlands"> Netherlands </option>
+                                <option value="New Zealand"> New Zealand </option>
+                                <option value="Pakistan"> Pakistan </option>
+                                <option value="Russia"> Russia </option>
+                                <option value="South Africa"> South Africa </option>
+                                <option value="Sri Lanka"> Sri Lanka </option>
+                                <option value="Switzerland"> Switzerland </option>
+                                <option value="Turkey"> Turkey </option>
+                                <option value="Uganda"> Uganda </option>
+                                <option value="United Arab Emirates"> United Arab Emirates 
+                                </option>
+                                <option value="United Kingdom"> United Kingdom </option>
+                                <option value="Zimbabwe"> Zimbabwe </option>
+                                <option value="other"> Other </option>
+                            </select>
+                            <label id="spni1" class="sub_lable"> - Country &nbsp&nbsp <p style="margin: 0; padding: 0; color: red;">Country Features unavailable</p></label>
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="space_before_btn"></div>
+                <div class="proceed_button">
+                    <button onclick="popup()"  id="btn01">Click to Checkout</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <footer>
+            <div class="logo_for_footer">
+                <img src="images/forlogo.png" style="width: 100%;" height="100%">
+            </div>
+            <div class="link_set">
+                <ul style="list-style-type: none;">
+                    <li><a href="product.html">Store</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="image_viewer.html">Gallery</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="icon-wrapper">
+                <svg id="cricket-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <path id="bat" class="cls-1" d="M86.68,22.9l-9.59-9.58a6.52,6.52,0,0,0-4.62-2,7.35,7.35,0,0,0-5,1.81L31.17,49.5a6.57,6.57,0,0,0,0,9.42l1,1L15.47,76.59l-5.29,5.29a1.6,1.6,0,0,0,0,2.31l5.29,5.29a1.6,1.6,0,0,0,2.31,0l5.29-5.29L39.76,67.51l1,1a6.52,6.52,0,0,0,4.62,2,6,6,0,0,0,4.63-2L78.09,40.74,82.88,36l3.8-3.8a6.39,6.39,0,0,0,0-9.25ZM16.63,86l-3-3,4-4,3,3Zm5.28-5.28-3-3L34.47,62.22l3,3ZM34.3,57.42,53,46.82,42.41,65.53Zm13.55,8.77a3.27,3.27,0,0,1-2.31,1,3.16,3.16,0,0,1-1.65-.5l10.9-19.49a1.47,1.47,0,0,0,.17-.83,1.54,1.54,0,0,0-.5-1.16,1.76,1.76,0,0,0-2-.33L33,55.78a2.8,2.8,0,0,1-.49-1.65,3.27,3.27,0,0,1,1-2.32l26.76-26.6L74.62,39.59ZM75.6,38.44,61.3,24.13,62.46,23h0l2.48-2.48h0l1.16-1.16,14.31,14.3Zm8.6-8.76-2.65,2.8L67.18,18.11l2.64-2.64a3.29,3.29,0,0,1,2.32-1,5.54,5.54,0,0,1,2.48,1L84.2,25A3.2,3.2,0,0,1,84.2,29.68Z" />
+                        <g id="ball">
+                        <path class="cls-2" d="M85,72.69a5,5,0,0,0-6.42,0,4.6,4.6,0,0,0-.63.62,5,5,0,0,0,.62,7,4.91,4.91,0,0,0,3,1.16A5,5,0,0,0,85,72.69Z" />
+                        <path class="cls-3" d="M78.46,72.64c6,2.14-.59,8,3.12,8.89" />
+                        </g>
+                    </svg>
+            </div>
+        </footer>
+
+        <script src="java_script/product_display.js"></script>
+        <script>
+            var btn = $('#button');
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+
+            btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+            });
+        </script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin: 120px 0 0px 0;
+    text-align: center;
+    color: #1E0046;
+}
+
+hr{
+    width: 25%;
+    margin-left: 37%;
+    height: 5px;
+    background-color: #1E0046;
+    margin-bottom: 20px;
+}
+
+h3,u{
+    font-family: 'Oswald', sans-serif;
+    color: #1E0046;
+    font-size: 20px;
+}
+li{
+    font-family: 'Oswald', sans-serif;
+    color:#000000;
+    font-size: 18px;
+    
+}
+
+.top-container{
+    display: grid;
+    grid-gap:10px;
+    box-shadow: #b3b3b3;
+    grid-template-areas: 'showcase showcase top-box';
+}
+
+.top-box{
+    
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    box-shadow: #b3b3b3;
+    display: grid;
+    padding-left: 85px;
+}
+
+/*celebratig victory image*/
+#img{
+    width:350px;
+    height:250px;
+    float:right;
+    margin:5px 10px 10px 10px;
+}
+
+/*container of image*/
+.mainImg{
+    margin-left: 20px;
+    grid-area: showcase;
+    min-height: 400px;
+    min-width: 800px;
+    background: url('images/sanga.jpg');
+    background-size: cover;
+    background-position: center;                
+    box-shadow: #b3b3b3;
+}
+
+/*information area*/
+.box{
+    text-align:left;
+    padding: 10px;
+    box-shadow: #b3b3b3;
+}
+footer {
+    height: 600px;
+}
